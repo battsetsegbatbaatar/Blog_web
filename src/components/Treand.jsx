@@ -24,7 +24,7 @@ export const Treand = () => {
               />
               <div className="absolute bottom-2 h-1/2 p-10 rounded-xl items-start gap-4">
                 <div className=" flex flex-col">
-                  <TagButton tags={article.tag_list} />
+                  <TagButton slide={article} />
                   <div className="font-semibold line-clamp-2">
                     <h1>{article.description}</h1>
                   </div>

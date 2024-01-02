@@ -25,14 +25,14 @@ export default function Home() {
           return (
             <div className="border border-solid rounded-xl p-4 ">
               <img
-                src={article.cover_image}
+                src={article.cover_image || "https://picsum.photos/536/354"}
                 alt=""
                 className="mb-4 h-60 w-90 rounded-md"
               />
               <div className="flex flex-col p-2 gap-5">
                 <div className="flex flex-col gap-4">
                   <div>
-                    <TagButton tags={article.tag_list} />
+                    <TagButton slide={article} />
                   </div>
                   <p className="font-semibold">{article.title}</p>
                 </div>

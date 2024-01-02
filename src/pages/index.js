@@ -15,7 +15,7 @@ export default function Home() {
         <Header />
         <Hero />
         {/* <Treand /> */}
-        <AllBlog />
+        <AllBlog href="[id]" />
         <Footer />
       </div>
     </>
